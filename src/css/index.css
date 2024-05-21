@@ -4,12 +4,184 @@ body {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
+  font-family: var(--font);
+  /* overflow-x: hidden; */
 }
 
-nav {
-  background-color: var(--secondary-accent-color);
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #92E0E5;
+  padding: 10px 20px;
+}
+
+.header-titles {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+
+  span {
+    margin-left: 30px;
+  }
 }
 
 .dog-icon {
   width: 50px;
+  margin-right: auto;
 }
+
+
+
+nav {
+  background-color: var(--secondary-accent-color);
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+    }
+  }
+}
+
+main {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border-color: #3F8DA7;
+    border-width: 5px;
+    border-style: solid;
+    margin-bottom: 20px;
+  } 
+}
+
+h1 {
+  font-weight: 400;
+}
+
+
+#what-are-dogs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  background-color: #FFFFFF;
+  color: #3F8DA7;
+  border-width: 4px;
+  border-color: #3F8DA7;
+  border-style: solid; 
+  font-family: var(--font);
+  font-size: 20px;
+  }
+
+
+
+.how-what-facts {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: white;
+  width: calc(100% - 40px);
+  }
+
+  
+  .how-what-facts img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-color: #3F8DA7;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 20px;
+  }
+  
+  .how-what-facts button {
+    padding: 10px px;
+    background-color: #FFFFFF;
+    color: #3F8DA7;
+    border-width: 4px;
+    border-color: #3F8DA7;
+    border-style: solid;
+    font-family: var(--font);
+    font-size: 20px;
+  }
+  
+
+  .how-what-facts h3,
+  .how-what-facts img,
+  .how-what-facts p,
+  .how-what-facts button {
+    display: inline; 
+    vertical-align: middle; 
+    margin-right: 20px; 
+  }
+
+.how-what-facts h3 {
+  margin-top: 0;
+}
+
+.dog-stories { 
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.info-headers {
+  padding-bottom: 20px;
+}
+
+footer { 
+  height: 230px;
+  background-color: #3F8DA7;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  h2 {
+    padding-bottom: 40px;
+    margin-bottom: auto;
+  }
+
+  .facebook-logo, .twitter-logo, .instagram-logo, .linkedIn-logo {
+    padding-left: 50px;
+  }
+}
+

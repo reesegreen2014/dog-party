@@ -28,5 +28,6 @@ Dog Party is a static website project created to match a provided design comp. T
 ## Contributors
 - [Reese Green](reesegreen2014@me.com) - GitHub: [My Github](https://github.com/reesegreen2014)
 
-## Installation
+## Visit The Website!
+- Visit [here](https://reesegreen2014.github.io/dog-party/) to see my website!
 

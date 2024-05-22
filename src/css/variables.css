@@ -1,5 +1,12 @@
 :root {
   --main-accent-color: #3F8DA8;
   --secondary-accent-color: #92E0E5;
+  --font: "Raleway", sans-serif;
+  --button-padding: 10px;
+  --button-background: white;
+  --button-color: #3F8DA7;
+  --button-border-width: 4px;
+  --dog-width: 132px;
+  --dog-height: 35px;
+  --dog-font-size: 17px;
 }
-

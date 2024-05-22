@@ -1,25 +1,32 @@
-# Static Comp Challenge - Frontend Module 2
+# Dog Party
 
-## Project Spec  
-[https://frontend.turing.edu/projects/M2-static-comp-challenge.html](https://frontend.turing.edu/projects/M2-static-comp-challenge.html)
+## Overview
+Dog Party is a static website project created to match a provided design comp. The website showcases various information about dogs, including their characteristics and fun facts. It was built using HTML and CSS, with a focus on modularized CSS and the use of imports and nested elements to replicate the design accurately.
 
-## Setup
-1. Fork + clone down this repo
-1. `cd` into the directory
-1. Install the library dependencies with `npm install`
-1. To verify that it is setup correctly, run `npm start` in your terminal. Go to `http://localhost:8080/` and you should see a page with the Turing logo image and a beautiful gradient background. If that's the case, you're good to go.
-2. Enter `control + c` in your terminal to stop the server at any time.
+## Goals
+- Replicate the provided design comp accurately using HTML and CSS.
+- Implement modularized CSS and utilize imports and nested elements for organized styling.
+- Showcase information about dogs in a visually appealing and user-friendly manner.
 
-## Specification
+## Technologies Used
+- HTML: Structure and content of the website.
+- CSS: Styling and layout, with a focus on modularization and organization.
+- GitHub Pages: Deployment of the website.
 
-This static comp challenge will keep you exercising that HTML/CSS muscle. :muscle: You will be asked to recreate the image below by recreating the screenshot using HTML and CSS.
+## Challenges
+- Implementing modularized CSS and ensuring proper organization.
+- Nesting CSS elements while maintaining specificity.
+- Ensuring consistency in styling across different sections of the website.
 
-In other static comp challenges (but not this one), we'll give you a bit of flexibility, however the objective is to build something that **very closely** represents the original design.
+## Wins
+- Successfully replicated the design comp using HTML and CSS.
+- Implemented modularized CSS and utilized imports and nested elements effectively.
 
-Once you get into the workforce, building out comps that reflect the designer's choice in layout, spacing, font, imagery, and color to the smallest detail, is a requirement.
+## Screenshots
+![Screenshot of static website](dist/images/Screenshot.png)
 
-## The Challenge
+## Contributors
+- [Reese Green](reesegreen2014@me.com) - GitHub: [My Github](https://github.com/reesegreen2014)
 
-Your challenge is to recreate the following image using HTML and CSS. You've been given some initial files to get started that you must use.
+## Installation
 
-![this](dog-party-spec.png).

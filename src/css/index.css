@@ -1,11 +1,20 @@
 @import 'variables';
 
-body {
-  background: url('../../dist/images/park.jpg') center/cover;
-  height: 100vh;
-  width: 100%;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: var(--font);
-  /* overflow-x: hidden; */
+}
+
+body {
+  display: flex; 
+  flex-direction: column;
+  background: url('../../dist/images/park.jpg') center/cover;
+}
+
+header, footer {
+  flex-shrink: 0;
 }
 
 header {
@@ -13,6 +22,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #92E0E5;
+  height: 45px;
   padding: 10px 20px;
 }
 
@@ -23,7 +33,7 @@ header {
   padding-right: 50px;
   font-weight: bold;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 
   span {
     margin-left: 30px;
@@ -53,11 +63,12 @@ nav {
 }
 
 main {
-  text-align: center;
+  flex: 1;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
   text-align: center;
+  align-items: center;
+  overflow: auto;
 }
 
 .overview {
@@ -65,17 +76,37 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  height: 600px;
 
   img {
-    max-width: 100%;
-    height: auto;
+    height: 255px;
+    width: 255px;
     border-radius: 50%;
     border-color: #3F8DA7;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     margin-bottom: 20px;
   } 
+
+  #what-are-dogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 132px;
+    height: 35px;
+    font-size: 17px;
+    padding: 3px 5px;
+    font-weight: 400;
+    flex-direction: column;
+    white-space: nowrap;
+    flex-direction: row;
+    border-width: 4px;
+  }
 }
+
+
 
 h1 {
   font-weight: 400;
@@ -107,10 +138,12 @@ h1 {
   flex-direction: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   padding-top: 50px;
   background-color: white;
-  width: calc(100% - 40px);
+  width: 100%;
+  height: 485px;
+  padding: 20px;
+  box-sizing: border-box;
   }
 
   
@@ -155,33 +188,92 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 
+.dog-information {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  margin-left: 20px;
+}
+
 .info-headers {
-  padding-bottom: 20px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
 }
 
 footer { 
-  height: 230px;
+  height: 180px;
   background-color: #3F8DA7;
   display: flex;
   flex-direction: column; 
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
 
   h3 {
     text-decoration: underline;
+    font-weight: 500;
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    align-items: center;
+    margin-left: 35px;
   }
 
   h2 {
-    padding-bottom: 40px;
-    margin-bottom: auto;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    align-items: center;
+    margin-left: 35px;
   }
 
   .facebook-logo, .twitter-logo, .instagram-logo, .linkedIn-logo {
     padding-left: 50px;
+    padding-bottom: 20px;
   }
 }
 
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 0 10px;
+  }
+  
+}
